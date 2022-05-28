@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>real madrid</title>
+    <link
+      rel="icon"
+      href="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/256/Real-Madrid-icon.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signUp.html">signup</a></li>
+      <li id="ter">
+        <input id="colorpicker" onchange="changeBG()" type="color" />
+      </li>
+    </ul>
+    <script>
+      function changeBG() {
+        var newcolor = document.getElementById("colorpicker").value;
+        document.body.style.background = newcolor;
+      }
+    </script>
+    <center>
+      <label id="jul">my name is: julian </label>
+      <br />
+      <label id="label"> my number is: 023060472 </label>
+      <br />
+      <label id="email">my email is :julian@gmail.com </label>
+    </center>  
+  </body>
+</html>

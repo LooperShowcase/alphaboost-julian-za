@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>real madrid</title>
+    <link
+      rel="icon"
+      href="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/256/Real-Madrid-icon.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signUp.html">signup</a></li>
+      <li id="ter">
+        <input id="colorpicker" onchange="changeBG()" type="color" />
+      </li>
+      <li id>
+        <a id="vid" href="https://www.youtube.com/watch?v=Yb4zrXKA8Oo"
+          ><img
+            id="sora"
+            src="https://media.istockphoto.com/vectors/default-profile-picture-avatar-photo-placeholder-vector-illustration-vector-id1214428300?k=20&m=1214428300&s=170667a&w=0&h=NPyJe8rXdOnLZDSSCdLvLWOtIeC9HjbWFIx8wg5nIks="
+            width="50%"
+        /></a>
+      </li>
+    </ul>
+    <center>
+      <form>
+        <label>Ferst name: </label>
+        <br />
+        <input id="x" type="email" />
+        <br />
+        <label>Password: </label>
+        <br />
+        <input id="p" type="password" />
+        <br />
+        <label>email: </label>
+        <br />
+        <input id="t" type="email" />
+        <br />
+        <label id="c">Girl </label>
+        <br />
+        <input type="radio" />
+        <br />
+        <label id="s">Boy </label>
+        <br />
+        <input type="radio" />
+        <br />
+        <input id="file" type="file" onchange="changePro()" />
+      </form>
+    </center>
+
+    <script>
+      function changeBG() {
+        var newcolor = document.getElementById("colorpicker").value;
+        document.body.style.background = newcolor;
+      }
+      function changePro() {
+        var newprofile = document.getElementById("file").files[0].name;
+        document.getElementById("sora").src = newprofile;
+      }
+    </script>
+  </body>
+</html>
